@@ -25,6 +25,10 @@ public class ClusterUtils {
         kMeans.buildClusterer(dataSet);
     }
 
+    public void buildHierCluter_SiNGE(Instances dataSet, int k, boolean isEuclide) throws Exception {
+        
+    }
+
     public String outPutKMeans() {
         return kMeans.toString();
     }

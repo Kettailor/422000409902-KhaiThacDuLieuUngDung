@@ -8,7 +8,6 @@ public class ZooApp {
             // Load dataset
             PreProcessData preData = new PreProcessData();
             Instances dataSet = preData.loadDateSet("data/zoo.arff");
-            System.out.println(dataSet);
 
             ClusterUtils cluster = new ClusterUtils();
             cluster.buildKMeans(dataSet, 7, true);
